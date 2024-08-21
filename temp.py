@@ -7,7 +7,8 @@ root.resizable(False, False)
 root.configure(background='black')
 
 # Load the background image
-bg = PhotoImage(file="quest.png")
+bg = PhotoImage(file="/Users/lolenker/Documents/GitHub/pythonProject/quest.png")
+
 
 # Create frames for each page
 Page1 = Frame(root, bg='black')

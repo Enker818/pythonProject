@@ -5,7 +5,7 @@ from tkinter import messagebox
 
 
 root = Tk()
-root.geometry("640x480")
+root.geometry("1280x720")
 root.title('YouTube Downloader')
 root.configure(background='black')
 
