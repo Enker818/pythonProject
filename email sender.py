@@ -3,9 +3,9 @@ import ssl
 
 
 
-sender = 'ibrayimtari@gmail.com'
-taker = 'spotmohamad9@gmail.com'
-password = 'jzdk qezq llvv ixgn'
+sender = 'email'
+taker = 'email'
+password = 'your token'
 subject = 'test'
 body = """
 YO WAHTS UP

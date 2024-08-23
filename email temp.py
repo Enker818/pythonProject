@@ -5,9 +5,9 @@ import ssl
 import time
 
 # Email sender and receiver
-sender_email = "ibrayimtari@gmail.com"  # Replace with your email
-receiver_email = "hekmat.abduweli@gmail.com"  # Replace with recipient's email
-password = "jzdk qezq llvv ixgn"  # Replace with your email password or app-specific password
+sender_email = "NA"  # Replace with your email
+receiver_email = "NA"  # Replace with recipient's email
+password = "token"  # Replace with your email password or app-specific password
 
 # Email subject and body
 subject = "Test Email"
