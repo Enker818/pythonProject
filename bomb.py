@@ -5,7 +5,7 @@ from winotify import Notification, audio
 
 def open_cmd_and_run_dir_s():
     try:
-        # Start a new command prompt, run `dir /s`, and close automatically after completion
+
         subprocess.run('start cmd /c "dir /s"', shell=True)
 
 
@@ -30,7 +30,7 @@ def lol():
 
 threads = []
 
-for i in range(1):
+for i in range(1): #how many times to run this
     t = threading.Thread(target=lol)
     t.daemon = True
     threads.append(t)

@@ -4,19 +4,19 @@ from email.mime.text import MIMEText
 import ssl
 import time
 
-# Email sender and receiver
-sender_email = "NA"  # Replace with your email
-receiver_email = "NA"  # Replace with recipient's email
-password = "token"  # Replace with your email password or app-specific password
 
-# Email subject and body
+sender_email = "NA"
+receiver_email = "NA"
+password = "token"
+
+
 subject = "Test Email"
 body = "This is a test email sent from a Python script."
 
-# Create a secure SSL context
+
 context = ssl.create_default_context()
 
-# Create the email message
+
 msg = MIMEMultipart()
 msg['From'] = sender_email
 msg['To'] = receiver_email
@@ -46,9 +46,9 @@ def send_email():
         print(f"An error occurred: {e}")
     return False
 
-# Send email in a loop with a delay
-for _ in range(10):  # Adjust the range as needed
+
+for _ in range(10):
     if send_email():
-        time.sleep(1)  # Wait for 1 second before sending the next email
+        time.sleep(1)
     else:
         break
