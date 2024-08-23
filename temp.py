@@ -7,7 +7,7 @@ root.resizable(False, False)
 root.configure(background='black')
 
 # Load the background image
-bg = PhotoImage(file="/Users/lolenker/Documents/GitHub/pythonProject/quest.png")
+bg = PhotoImage(file="quest.png")
 
 
 # Create frames for each page
@@ -82,8 +82,8 @@ button_command3 = lambda: Page5.tkraise()
 page1_button = Button(Page1, text="Lets Go",
                       width=10,
                       height=1,
-                      bg="red",
-                      fg="white",
+                      bg="white",
+                      fg="black",
                       command=button_command)
 
 # Pack content for Page 1
