@@ -4,7 +4,7 @@ import ssl
 
 
 sender = 'ibrayimtari@gmail.com'
-taker = 'ankerahet@gmail.com'
+taker = 'spotmohamad9@gmail.com'
 password = 'jzdk qezq llvv ixgn'
 subject = 'test'
 body = """

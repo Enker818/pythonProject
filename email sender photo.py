@@ -8,7 +8,7 @@ import threading
 
 # Define sender and receiver email addresses
 sender = 'ibrayimtari@gmail.com'
-receiver = 'hhei544@gmail.com'
+receiver = 'spotmohamad9@gmail.com'
 password = 'jzdk qezq llvv ixgn'  # Note: Replace with a valid app-specific password or manage it securely
 subject = 'Test Email with Photo Attachment'
 body = "YO WAHTS UP"
