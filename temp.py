@@ -95,8 +95,8 @@ page1_button.pack()
 page2_button = Button(Page2, text="I Understand",
                       width=10,
                       height=1,
-                      bg="red",
-                      fg="white",
+                      bg="white",
+                      fg="black",
                       command=button_command1)
 
 # Pack content for Page 2
@@ -141,8 +141,8 @@ root.after(5000000, button_command2)
 page4_button = Button(Page4, text="Next Page",
                       width=10,
                       height=1,
-                      bg="red",
-                      fg="white",
+                      bg="white",
+                      fg="black",
                       command=button_command3)
 page4_button.pack(pady=(50, 20))
 
@@ -150,8 +150,8 @@ page4_button.pack(pady=(50, 20))
 page5_button = Button(Page5, text="Next Page",
                       width=10,
                       height=1,
-                      bg="red",
-                      fg="white",
+                      bg="white",
+                      fg="black",
                       command=None)
 page5_button.pack(pady=(50, 20))
 
