@@ -1,4 +1,4 @@
-from pytube3 import YouTube
+from pytube import YouTube
 from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
