@@ -1,4 +1,4 @@
-from pytube3 import YouTube
+from pytube import YouTube
 from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
@@ -78,14 +78,14 @@ entry.pack(padx=130, pady=10, side=TOP)
 
 button_video = Button(root, text="MP4/Video",
                       width=15, height=2,
-                      bg="red", fg="white",
+                      bg="white", fg="black",
                       command=video)
 button_video.pack(pady=10)
 
 
 button_music = Button(root, text="MP3/Music",
                       width=15, height=2,
-                      bg="red", fg="white",
+                      bg="white", fg="black",
                       command=music)
 button_music.pack(pady=10)
 
