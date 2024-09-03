@@ -1,35 +1,36 @@
-from operator import length_hint
 from tkinter import *
-from unittest.mock import right
+import tkinter as tk
+
+
 
 root = Tk()
-root.geometry("400x400")
+root.geometry("220x400")
 root.title('Kalko')
 
 #operatorer
 button_1 = Button(root, text="+",
-                      width=1, height=1,
+                      width=2, height=2,
                       bg="white", fg="black",)
 button_2 = Button(root, text="-",
-                      width=1, height=1,
+                      width=2, height=2,
                       bg="white", fg="black",)
 button_3 = Button(root, text="*",
-                      width=1, height=1,
+                      width=2, height=2,
                       bg="white", fg="black",)
 button_4 = Button(root, text="/",
-                      width=1, height=1,
+                      width=2, height=2,
                       bg="white", fg="black",)
 button_5 = Button(root, text="%",
-                      width=1, height=1,
+                      width=2, height=2,
                       bg="white", fg="black",)
 button_6 = Button(root, text="**",
-                      width=1, height=1,
+                      width=2, height=2,
                       bg="white", fg="black",)
 button_7 = Button(root, text="//",
-                      width=1, height=1,
+                      width=2, height=2,
                       bg="white", fg="black",)
 button_8 = Button(root, text="=",
-                      width=1, height=1,
+                      width=2, height=2,
                       bg="white", fg="black",)
 #number
 button_n1 = Button(root, text="1",
@@ -64,27 +65,27 @@ button_n0 = Button(root, text="0",
                       bg="white", fg="black",)
 
 entry = Entry(root, width=70)
-entry.pack(padx=1, pady=1,)
+entry.grid()
 
 
-button_1.pack(side=LEFT)
-button_2.pack(side=LEFT)
-button_3.pack(side=LEFT)
-button_4.pack(side=LEFT)
-button_5.pack(side=LEFT)
-button_6.pack(side=LEFT)
-button_7.pack(side=LEFT)
-button_8.pack(side=LEFT)
-button_n1.pack()
-button_n2.pack()
-button_n3.pack()
-button_n4.pack()
-button_n5.pack()
-button_n6.pack()
-button_n7.pack()
-button_n8.pack()
-button_n9.pack()
-button_n0.pack()
+button_1.grid(row=1,column=1,sticky='w')
+button_2.grid(row=1,column=0)
+button_3.grid()
+button_4.grid()
+button_5.grid()
+button_6.grid()
+button_7.grid()
+button_8.grid()
+button_n1.grid()
+button_n2.grid()
+button_n3.grid()
+button_n4.grid()
+button_n5.grid()
+button_n6.grid()
+button_n7.grid()
+button_n8.grid()
+button_n9.grid()
+button_n0.grid()
 
 
 root.mainloop()
