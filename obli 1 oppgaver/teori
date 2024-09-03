@@ -1,0 +1,18 @@
+Teori
+Toerioppgave 1 - Variabel:
+
+Forklar med egne ord hva en variabel er.
+
+Variable kan brukes for å gi navn til en verdi.
+så isteden å bruke f.eks print(4 * 8) vi kan gi navn til verdien 4 som her:
+Number_1 = 4.
+selve verdien kan være navn, tall eller funksjner
+
+Teorioppgave 2 - Datatyper:
+
+Hvilke datatyper er de følgende verdiene? Begrunn svarene dine (en setning eller to per verdi).
+
+a) "Hamburger" = string(Tekststrenger, brukes for text eller symboler)
+b) 5.52 = float(brukes for all tall for har desimaler for både postivt ogo negativt)
+c) 4195 = int(integar brukes for tall både postivt ogo negativt)
+d) False = bool(brukes for True og False funksjonen og kan bare ha en verdi)
