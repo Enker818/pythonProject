@@ -4,7 +4,7 @@ import ssl
 
 
 sender = 'email'
-taker = 'email'
+taker = 
 password = 'your token'
 subject = 'test'
 body = """

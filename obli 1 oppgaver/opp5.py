@@ -2,7 +2,7 @@ from tkinter import *
 import tkinter as tk
 
 root = Tk()
-root.geometry("150x200")
+root.geometry("300x300")
 root.title('Kalko')
 
 
