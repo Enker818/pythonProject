@@ -23,20 +23,20 @@ def add_to_equation(symbol):
 def evaluate_equation():
     global equation_text
     try:
-        result = str(eval(equation_text))  # Evaluate the equation
-        E_label.set(result)  # Display the result
-        equation_text = result  # Update equation_text with the result for further calculations
+        result = str(eval(equation_text))
+        E_label.set(result)
+        equation_text = result
     except Exception as e:
-        E_label.set("Error")  # Display error if invalid
+        E_label.set("Error")
         equation_text = ""
 
-# Function to clear the display
+
 def clear():
     global equation_text
     equation_text = ""
     E_label.set("")
 
-# Creating buttons
+
 button_clear = Button(root, text="C", width=9, height=4, bg="red", fg="white", command=clear)
 button_1 = Button(root, text="+", width=9, height=4, bg="black", fg="white", command=lambda: add_to_equation("+"))
 button_2 = Button(root, text="-", width=9, height=4, bg="black", fg="white", command=lambda: add_to_equation("-"))
@@ -47,7 +47,7 @@ button_6 = Button(root, text="**", width=9, height=4, bg="black", fg="white", co
 button_7 = Button(root, text="//", width=9, height=4, bg="black", fg="white", command=lambda: add_to_equation("//"))
 button_8 = Button(root, text="=", width=9, height=4, bg="black", fg="white", command=evaluate_equation)
 
-# Number buttons
+
 button_n1 = Button(root, text="1", width=9, height=4, bg="black", fg="white", command=lambda: add_to_equation(1))
 button_n2 = Button(root, text="2", width=9, height=4, bg="black", fg="white", command=lambda: add_to_equation(2))
 button_n3 = Button(root, text="3", width=9, height=4, bg="black", fg="white", command=lambda: add_to_equation(3))
@@ -59,7 +59,7 @@ button_n8 = Button(root, text="8", width=9, height=4, bg="black", fg="white", co
 button_n9 = Button(root, text="9", width=9, height=4, bg="black", fg="white", command=lambda: add_to_equation(9))
 button_n0 = Button(root, text="0", width=9, height=4, bg="black", fg="white", command=lambda: add_to_equation(0))
 
-# Positioning the buttons on the grid
+
 button_clear.grid(row=1, column=0)
 button_1.grid(row=1, column=1)
 button_2.grid(row=1, column=2)
