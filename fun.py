@@ -1,4 +1,4 @@
-color = "red"
+"""color = "red"
 pular_noun = "blue"
 celebrity = "shrek"
 
@@ -17,4 +17,6 @@ else:
 if  C == celebrity:
     print("SEXY AF")
 else:
-    print("Who TF IS THAT GUY")
+    print("Who TF IS THAT GUY")"""
+
+

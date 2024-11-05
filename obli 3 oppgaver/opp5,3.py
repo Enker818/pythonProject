@@ -1,16 +1,13 @@
 """
-Oppgave 5.2 - Mer funksjoner
-
 Utvid forrige oppgave med noen funksjoner og benytt dem i koden din.
 
-A) Lag en funksjon som printer ut alle filmene i en gitt liste med filmer slik at formatet for hver filmutskrift blir seende slik ut:
+A) Opprett en funksjon som tar en liste med filmer, og filnavn som parameter. Benytt denne funksjonen til å skrive alle filmene i lista til en fil du selv velger navnet på f.eks. "movies.txt". Hvis filen allerede eksisterer, skal den overskrives. Legg gjerne til hver film som en egen linje i filen med et fint format. For eksempel:
 
 The Lion King - 1994 has a rating of 8.5
 
-B) Lag en funksjon som tar en liste med filmer som parameter og regner ut gjennomsnittsratingen for alle filmene i lista og returnerer dette. Test funksjonen og skriv ut gjennomsnittet.
-C) Lag en funksjon som tar en liste med filmer og et årstall som parametere, og returnerer en ny liste med alle filmer fra og med det gitte årstallet.
-Benytt funksjonen, og print ut informasjon om alle filmer fra og med 2010 (Kan vi  bruke en av funksjonene vi har laget tidligere til å hjelpe oss med noe av dette?).
+B) Lag en funksjon som leser den samme filen (filnavn som input-parameter til funksjonen) og skriver ut innholdet til terminalen.
 """
+
 
 filmer = [
     {"name": "Inception", "year": 2010, "rating": 8.7},
@@ -41,6 +38,19 @@ def gjennom():
 def filmer_FromToAnd(liste, År):
     return [film for film in liste if film["year"] >= År]
 
+def skriv_til_fil(liste, filnavn):
+    with open(filnavn, 'w') as f:
+        for A in liste:
+            f.write(f"{A['name']} - {A['year']} has a rating of {A['rating']}\n")
+
+
+def les(filnavn):
+        with open(filnavn, 'r') as f: #'r' står for read mode,
+            innhold = f.read()
+            print("Innholdet i filen er:")
+            print(innhold)
+
+
 
 
 
@@ -49,3 +59,6 @@ FA2010 = filmer_FromToAnd(filmer,2010)
 navn(FA2010)
 A = gjennom()
 print(f"Gjennomsnittsratingen er {A:.1f}")
+filnavn = "movies.txt"
+skriv_til_fil(filmer, filnavn)
+les(filnavn)
